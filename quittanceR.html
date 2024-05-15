@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quittance</title>
+<style>
+    /* Styles pour la quittance */
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .quittance {
+        border: 1px solid #000;
+        padding: 20px;
+        width: 400px;
+        margin: auto;
+    }
+    .quittance h2 {
+        text-align: center;
+    }
+    .quittance p {
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+    <div class="quittance">
+        <h2>Quittance</h2>
+        <p>Nom du membre: <?php echo $nom_membre; ?></p>
+        <p>Montant: <?php echo $montant; ?></p>
+        <p>Description: <?php echo $description; ?></p>
+        <p>Date de la recette: <?php echo $date_recette; ?></p>
+     
+    </div>
+    <script>
+       
+        window.onload = function() {
+            window.print();
+        };
+    </script>
+</body>
+</html>
